@@ -19,12 +19,13 @@ import java.util.concurrent.TimeUnit;
  * Created by Srikanth on 23/01/2015.
  */
 public class StepDefs {
+
 //    public static WebDriver driver;
      static WebDriver driver = BrowserFactory.getDriver();
-    String URL1="http://demo.nopcommerce.com";
+
     @Before
     public void startBrowser() throws MalformedURLException, InterruptedException {
-        BrowserFactory.startBrowser("Chrome",URL1);
+        BrowserFactory.startBrowser(LoadProps.getProperty("browser"),LoadProps.getProperty("URL"));
         driver = BrowserFactory.driver;
 //        driver=new FirefoxDriver();
 //        driver.get("http://srikanthgoudm99-001-site1.smarterasp.net/");

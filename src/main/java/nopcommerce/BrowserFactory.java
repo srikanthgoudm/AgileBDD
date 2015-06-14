@@ -65,7 +65,7 @@ public class BrowserFactory extends BasePage {
                 caps.setBrowserName("firefox");
                 caps.setVersion("");
 //                 Selenium grid URL
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps);
+                driver = new RemoteWebDriver(new URL(LoadProps.getProperty("selgrid")), caps);
 //                 Selenium grid on cloud (sauce labs) when accessed locally or from Jenkins
                 // Create the connection to Sauce Labs to run the tests
 //                DesiredCapabilities caps = DesiredCapabilities.firefox();
