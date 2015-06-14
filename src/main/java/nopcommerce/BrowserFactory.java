@@ -49,7 +49,7 @@ public class BrowserFactory extends BasePage{
     protected static WebDriver startRemoteWebBrowser(String browser, String URL1) {
 
         //Switch to on or off the selenium grid
-        if (false) {
+        if (true) {
             try {
 
                 System.out.println("grid started...");
