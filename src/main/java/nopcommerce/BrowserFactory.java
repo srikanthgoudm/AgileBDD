@@ -17,7 +17,7 @@ import java.net.URL;
 /**
  * Created by Srikanth on 07/06/2015.
  */
-public class BrowserFactory extends BasePage{
+public class BrowserFactory extends BasePage {
     public static WebDriver startBrowser(String Browser, String URL1) throws MalformedURLException, InterruptedException {
         if (driver == null || !isSessionActive()) {
             driver = startRemoteWebBrowser(Browser, URL1);
@@ -59,15 +59,13 @@ public class BrowserFactory extends BasePage{
 //                caps.setCapability("version", "");
 
                 //create desired capabilities object
-                DesiredCapabilities caps=new DesiredCapabilities();
+                DesiredCapabilities caps = new DesiredCapabilities();
                 //set capabilities (platform,browser and version)
                 caps.setPlatform(Platform.VISTA);
                 caps.setBrowserName("firefox");
                 caps.setVersion("");
 //                 Selenium grid URL
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),caps);
-
-
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps);
 //                 Selenium grid on cloud (sauce labs) when accessed locally or from Jenkins
                 // Create the connection to Sauce Labs to run the tests
 //                DesiredCapabilities caps = DesiredCapabilities.firefox();
@@ -98,9 +96,7 @@ public class BrowserFactory extends BasePage{
                 } else {
                     throw new RuntimeException("Browser give " + browser + " did not load..");
                 }
-            }
-            catch(Exception e)
-            {
+            } catch (Exception e) {
                 throw new RuntimeException("Browser give " + browser + " did not load..");
             }
         }
