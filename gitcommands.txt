@@ -1,0 +1,19 @@
+git config —list     //username and list of origin source
+git clone sourcepath  // to create clone in local machine from source
+
+git config —global user.name “jag dhameliya”   // name of person who committing
+
+git init   // for empty repository
+
+cat > .gitignore  //to create git ignore file
+
+ctr+d  // to exit from edit mode
+
+vi filename   // to open file in editor
+
+i   //// to start editing
+
+:wq    //  to exit from  file after saving
+
+ git push https://jsdcanada@github.com/jsdcanada/AgileBDD/
+
