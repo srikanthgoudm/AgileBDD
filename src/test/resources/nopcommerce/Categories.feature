@@ -8,7 +8,7 @@ Feature: Product Categories List
     Given User is on Homepage
     When he selects a "<Category>" and "<Sub Category>"
     Then he should be navigated to selected category page with header "<Category>" or "<Sub Category>"
-    And should have an option to apply the filter as "Sort by","Display" and "View as"
+    And should have an option to apply the filter as "Sort by","Display"
 
   Examples:
     | Category    | Sub Category  |
