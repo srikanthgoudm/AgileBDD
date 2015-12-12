@@ -94,13 +94,13 @@ public class StepDefs {
         Assert.assertEquals("Checking the category header ",expHeader,driver.findElement(By.className("page-title")).getText());
     }
 
-    @Then("^should have an option to apply the filter as \"([^\"]*)\",\"([^\"]*)\" and \"([^\"]*)\"$")
-    public void should_have_an_option_to_apply_the_filter_as_and(String arg1, String arg2, String arg3) {
+    @Then("^should have an option to apply the filter as \"([^\"]*)\",\"([^\"]*)\"$")
+    public void should_have_an_option_to_apply_the_filter_as_and(String arg1, String arg2) {
 
         Assert.assertTrue("checking the option to order by ",driver.findElement(By.id("products-orderby")).isDisplayed());
 
         Assert.assertTrue("checking the option to change page size", driver.findElement(By.id("products-pagesize")).isDisplayed());
 
-        Assert.assertTrue("checking the option to change view mode", driver.findElement(By.id("products-viewmode")).isDisplayed());
+//        Assert.assertTrue("checking the option to change view mode", driver.findElement(By.id("products-viewmode")).isDisplayed());
     }
 }
