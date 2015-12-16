@@ -1,4 +1,4 @@
-@smokeTest1
+@smokeTest
 Feature: Categories List Functionality
 #  As a user
 #  I want to see the categories list on home Page
